@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+.pp{color: red;font-size: 35px;font-family: 黑体}
+.tt{background: yellow;color: blue;font-size: 25px;font-family: 隶书}
+body{background-color:pink;}
+h1{color: red;font-size: 35px;font-family: 黑体}
+span{background: yellow;color: blue;font-size: 25px;font-family: 隶书}
+h2{color:blue;font:small-caps bolder 50pt 隶书;text-decoration:underline blink;
+word-spacing:200px;line-height:250px;}
+#mm{color: blue;font-size: 35px;font-family: 黑体}
+#nn{background:black;color: blue;font-size: 25px;font-family: 隶书
+}
+tr{background:blue;background-position:top;font:bolder small-caps italic}

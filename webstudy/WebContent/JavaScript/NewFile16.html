@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function show() {
+	var name=document.myform.name.value;//取得内容
+	alert("姓名："+name);//显示姓名
+	var sex//定义性别
+	if(document.myform.sex[0].checked){//判断 如果选择了第一个元素
+		sex=document.myform.sex[0].value;//则显示性别就是第一个元素
+	}else{
+		sex=document.myform.sex[1].value;//不然就是第二个
+	}
+	alert("性别："+sex)//打印出判断得到的性别
+	var inst="";//定义兴趣
+	for(i=0;i<document.myform.inst.length;i++){//用循环判断 选择的是哪个
+		if(document.myform.inst[i].checked){
+			inst +=document.myform.inst[i].value+"、"//把选择的兴趣连接到一起
+		}
+	}
+	alert("兴趣："+inst);//打印兴趣
+}
+</script>
+</head>
+<body>
+<form action="" method="post" name="myform">
+姓名：<input type="text" name="name"><br/>
+性别:<input type="radio" name="sex" value="男" checked="checked">男
+     <input type="radio" name="sex" value="女" >女<br/>
+ 兴趣：<input type="checkbox" name="inst" value="唱歌">唱歌
+ <input type="checkbox" name="inst" value="游泳">游泳
+ <input type="checkbox" name="inst" value="跳舞">跳舞
+ <input type="checkbox" name="inst" value="编程" checked="checked">编程
+ <input type="checkbox" name="inst" value="上网">上网<br/>
+ <input type="button" value="显示" onclick="show()">
+ 
+</form>
+
+</body>
+</html>

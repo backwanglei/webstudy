@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+function Student(name) {
+	this.name=name;
+	this.getName=getName;
+	}
+function getName() {
+	return this.getName;
+}
+function Button_onclick() {
+	s=new Student("lisi",20,"1321654654","合肥","安徽省")
+	//alert(s.getName());
+	alert(s.name)
+	alert(s)
+	
+}
+</script>
+<input name="button" type="button" value="获得姓名" onclick="Button_onclick()">
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function  fun(vat) {
+	window.location=vat
+	
+}
+</script>
+</head>
+<body>
+网站：<select name="url" onchange="fun(this.value)">
+<option value="#">==请选择要浏览的网站==</option>
+<option value="http://www.baidu.com">百度</option>
+<option value="http://www.taobao.com">淘宝</option>
+</select>
+</body>
+</html>

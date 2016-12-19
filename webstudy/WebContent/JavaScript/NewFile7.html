@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+String.prototype.trim(){//string是原型对象 pro是它的实例对象  javascrpt
+	//中是不带这个trim方法的，必须重新定义一个 
+	return this.replace(/(^\s*)|(\s*$)/g,"")
+}
+var s="  leading and  "
+window.alert(s+"("+s.length+")");
+s=s.trim();
+window.alert(s+"("+s.length+")")
+</script>
+</head>
+<body>
+</body>
+</html>

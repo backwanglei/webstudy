@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function vail() {
+	var value=myform.email.value;//通过form表单中找到输入内容框的名字，根据名字找到内容
+	if(!/^\w+@\w+.\w+$/.test(value)){//对输入的内容进行验证
+		alert("Email输入格式不正确！") //弹出警告框
+		myform.email.focus();//让焦点定位到email框 自动把光标放在此组件上
+		myform.email.select();//选择全部内容
+		 return false;//返回flase
+	}
+	  return true; //返回true 
+}
+
+
+</script>
+</head>
+<body>
+<form action="" method="post" name="myform" onsubmit="return vail(this)">
+Email:<input type="text" name="email">
+<input type="submit" value="提交">
+</form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>表单元素</title>
+</head>
+<body>
+	<h1>商品信息</h1>
+	<h3>产品类别</h3>
+	<hr />
+	<ul>
+		<dl>
+			<li><dt>数码</dt>
+				<dd>
+					。<a href="file:///D:/workspace/webStudy/WebContent/NewFile3.html"
+						target="_blank">苹果笔记本</a>
+				</dd>
+				<dd>。家电</dd>
+				<dd>。手机</dd></li>
+			<li>美容</li>
+			<li>服装</li>
+		</dl>
+	</ul>
+	<hr />
+	<dt>联想电脑</dt>
+	<dd>产品型号：&nbsp;&nbsp;联想IdeaPad&nbsp;Y450-A-TFU(NBA纪念版)</dd>
+	<dd>价格：&nbsp;&nbsp;4999元</dd>
+	<dd>所在地：北京</dd>
+	<hr />
+	<h2>购物流程</h2>
+	<ol>
+		<li>确认购买信息</li>
+		<li>付款到<a href="https://www.taobao.com/" target="_blank">淘宝网</a></li>
+		<li>确认收货</li>
+		<li>付款给<a href="mailto:1047612585@qq.com">商家邮箱</a></li>
+		<li>双方评价</li>
+
+	</ol>
+<form action="F:\imags\top.docx" method="post">
+<p>淘宝网站邮箱：<input name="淘宝网站邮箱" type="text"  size="20" maxlength="20"/></p>
+<p>输入密码：&nbsp;<input name="pwd" type="password" size="20"/></p>
+<p>再次输入密码<input name="pwd" type="password" size="20"/></p>
+<p>出生日期<input name="出生日期" type="text" size="5">年&nbsp;
+<select name="Month" >
+<option value="一月">一月</option>
+<option value="二月">二月</option>
+<option value="三月">三月</option>
+<option value="四月">四月</option>
+<option value="五月">五月</option>
+<option value="六月">六月</option>
+<option value="七月">七月</option>
+<option value="八月">八月</option>
+<option value="九月">九月</option>
+<option value="十月">十月</option>
+<option value="十一月">十一月</option>
+<option value="十二月">十二月</option>
+</select>
+月&nbsp;<input name="日期" type="text" size="5">日
+</p>
+<p><input name="reset" type="reset" value="重置"/></p>
+<p><input name="btn" type="submit" value="登录" style="color: red;font-size:20px;background:orange; "/></p>
+<p>性别：
+<input type="radio" name="sex" value="女"/>女
+<input type="radio" name="sex" value="男"/>男</p>
+</form>
+<fieldset>
+<legend>调查：您最喜欢的产品：</legend>
+<form >
+家电：<input type="checkbox" name="appliance"><br/>
+服装：<input type="checkbox" name="clothes"><br/>
+食品：<input type="checkbox" name="food"><br/>
+数码产品：<input type="checkbox" name="digital products"><br/>
+<input  name="btn" type="submit" value="提交"style="font-size:15px;background:orange; " />
+</form>
+</fieldset>
+
+</body>
+</html>

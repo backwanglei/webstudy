@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function retu() {
+	var city=document.myform.city.value
+//取得打开该页面的document对象	
+	var doc=window.opener.document;
+	//将取得的信息赋值给上一个页面上的result文本框
+	doc.parentform.result.value=city;
+	window.close();
+}
+</script>
+</head>
+<body>
+<form name="myform">
+选择： <select name="city">
+    <option value="北京">北京</option>
+     <option value="上海">上海</option>
+      <option value="南京">南京</option>
+       <option value="合肥">合肥</option>
+     
+</select>
+<input type="button" value="返回" onclick="retu();">
+</form>
+</body>
+</html>
